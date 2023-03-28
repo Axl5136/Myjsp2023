@@ -47,7 +47,7 @@ public class ClienteList extends HttpServlet
             out.println("<title>Servlet ClienteList</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<table class=\"table table-dark table-hover\"");
+            out.println("<table class=\"table table-success table-striped\"");
             out.println("<tr class=\"table-success\">");
             out.println("<td>Nombre</td>");
             out.println("<td>Apellido Paterno</td>");
@@ -87,7 +87,7 @@ public class ClienteList extends HttpServlet
             }
 
             out.println("</table>");
-            out.println("<a href=\"AgregaCliente\">Nuevo cliente</a> ");
+            out.print("<button type=\"button\" class=\"btn btn-link\"><a href=\"AgregaCliente\">Nuevo cliente ></a></button>");
             out.println("</body>");
             out.println("</html>");
         }

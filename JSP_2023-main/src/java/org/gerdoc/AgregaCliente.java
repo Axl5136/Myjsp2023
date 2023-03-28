@@ -123,12 +123,11 @@ public class AgregaCliente extends HttpServlet {
         out.println("<input id=\"edad\" name=\"edad\" type=\"number\" />");
         out.println("</td>");
         out.println("<tr>");
-        out.println("<td colspan=\"2\"><input id=\"guardar\" name=\"guardar\" value=\"Guardar\"  type=\"submit\" /></td>");
+        out.println("<td colspan=\"2\"><input id=\"guardar\" name=\"guardar\" value=\"Guardar\"  type=\"submit\" class=\"btn btn-primary btn-lg\" tabindex=\"-1\" role=\"button\" aria-disabled=\"true\" /></td>");
         out.println("</tr>");
         out.println("</table>");
         out.println("</form>");           
     }
-
     private void guardaCliente(HttpServletRequest request) 
     {
         Cliente cliente = new Cliente( );

@@ -89,18 +89,23 @@
             if( !"Submit".equals( guardar ) && !"Submit".equals( actualizar ) )
             {
         %>  
-        <div class="container"> 
-            <form id="form1">
+        <br><br>
+            <form>
 
-                <table border="1">
-                    <tr>
-                        <td>Nombre</td>
-                        <td><input id="nombre" name="nombre" value="<%=datos.getNombre()%>" type="text"/></td>
-
-                    </tr>
-                    <tr>
-                        <td>Calificación</td>
-                        <td><input id="calif" name="calif" value="<%=datos.getCalf()%>" type="number"/>
+               <div class="input-group">
+                    
+                     <span class="input-group-text">Nombre</span>    
+                    <input type="text" id="nombre" name="nombre" aria-label="First name" class="form-control" value="<%=datos.getNombre()%>">
+               </div>
+               
+               
+               
+               
+               
+                    
+               <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">CALIFICACION</label>
+                        <input type="number" class="form-control" id="number" name="calif" value="<%=datos.getCalf()%>">    
                             <%
                                 if ("Submit".equals(editar)) {
                             %>
@@ -108,18 +113,19 @@
                             <%
                                 }
                             %>
-                        </td>
-                    </tr>
-                    <tr >
-                        <td colspan="2">
-                            <button type="button" class="btn btn-success">
+                        
+                    </div><!-- comment -->
+                    
+                    
+                         
+                            <button type="submit" class="btn btn-primary">Submit</button>
                             <input  type="submit" id="Guardar" name="<%=accion%>" />
-                            </button
-                        </td>
-                    </tr>
+                            
+                        
+                    
                 </table>
             </form>
-        </div>
+        
         <%
             }
         %>
