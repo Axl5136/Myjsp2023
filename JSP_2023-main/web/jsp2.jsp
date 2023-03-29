@@ -2,6 +2,9 @@
     Document   : jsp2
     Created on : 14 mar 2023, 13:12:32
     Author     : alumno
+    *Alumno: Rodriguez Frias Axel Isaias 
+    *Grupo: 4IM9
+    *Fecha: 28/03/2023
 --%>
 
 <%@page import="java.util.List"%>

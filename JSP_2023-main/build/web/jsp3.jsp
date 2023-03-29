@@ -2,6 +2,9 @@
     Document   : jsp3
     Created on : 16 mar 2023, 13:04:14
     Author     : alumno
+*Alumno: Rodriguez Frias Axel Isaias 
+*Grupo: 4IM9
+*Fecha: 28/03/2023
 --%>
 
 <%@page import="java.util.List"%>
@@ -13,8 +16,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css3.css">
+        <link rel="stylesheet" href="cssJsp3.css">
         <title>JSP Page</title>
+        
     </head>
     <body>
         <%
@@ -72,11 +76,18 @@
                     lista.add( datos );
                 }
         %>
-                <h1>EXITO!</h1>
+                
                 <script>
                     console.log("Exito");
                 </script>
-                <a href="jsp2.jsp">Ir a jsp2 </a>
+                
+                
+                <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Bien Hecho!</h4>
+  <p>Se han agregado exitosamente los datos(Nombre y Calificacion)</p>
+  <hr>
+  <p class="mb-0">Puedes agregar mas datos ingresando a este <a href="jsp2.jsp">Link </a>, vamos!</p>
+</div>
         <%
             }
             if( datos == null )
@@ -102,10 +113,10 @@
                
                
                
-                    
+               <br>
                <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">CALIFICACION</label>
-                        <input type="number" class="form-control" id="number" name="calif" value="<%=datos.getCalf()%>">    
+                        <input type="number" class="form-control" id="number0" name="calif" value="<%=datos.getCalf()%>">    
                             <%
                                 if ("Submit".equals(editar)) {
                             %>
@@ -118,14 +129,13 @@
                     
                     
                          
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            <input  type="submit" id="Guardar" name="<%=accion%>" />
+                            <input  type="submit" id="Guardar" name="<%=accion%>" class="btn btn-primary"/>
                             
-                        
+                        <br>
                     
                 </table>
             </form>
-        
+        <br><br>
         <%
             }
         %>

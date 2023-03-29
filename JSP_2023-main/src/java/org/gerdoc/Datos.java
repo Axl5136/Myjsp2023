@@ -1,3 +1,4 @@
+
 package org.gerdoc;
 
 
@@ -11,6 +12,9 @@ import java.io.Serializable;
 /**
  *
  * @author alumno
+ * Alumno: Rodriguez Frias Axel Isaias 
+*Grupo: 4IM9
+*Fecha: 28/03/2023
  */
 public class Datos implements Serializable
 {
